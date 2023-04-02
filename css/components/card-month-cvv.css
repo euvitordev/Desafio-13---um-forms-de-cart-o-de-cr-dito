@@ -1,0 +1,12 @@
+.card-month-cvv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+#validity-card {
+    width: 182px;
+}
+#cvv-card {
+    width: 130px;
+}

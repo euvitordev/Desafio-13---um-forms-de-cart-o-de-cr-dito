@@ -1,0 +1,57 @@
+@import url(./components/container.css);
+@import url(./components/buttons/buttons.css);
+@import url(./components/input-box.css);
+@import url(./components/inputs.css);
+@import url(./components/card-month-cvv.css);
+@import url(./components/container-card.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro";
+}
+
+:root {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: url(https://images.unsplash.com/photo-1638438134099-a91e5373aaf0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+            no-repeat,
+        center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 48px;
+
+    width: 736px;
+
+    /* From https://css.glass */
+    background: rgba(31, 41, 55, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid #374151;
+    transition: 1s;
+}
+main:hover {
+    border-radius: 24px;
+    border: 1px solid rgba(31, 41, 55, 0.4);
+}

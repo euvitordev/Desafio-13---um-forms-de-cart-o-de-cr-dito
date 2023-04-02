@@ -1,0 +1,49 @@
+input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+
+    width: 328px;
+    height: 48px;
+
+    /* neutral colors/gray-900 */
+
+    background: #111827;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    border: 1px solid #374151;
+    border-radius: 6px;
+    outline: none;
+
+    transition: 1s;
+}
+
+input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* neutral colors/gray-400 */
+
+    color: #9ca3af;
+}
+
+input:focus {
+    border: 2px solid #9333ea;
+}
+
+input:invalid + .erro:before {
+    content: attr(data-error);
+}
+
+input:hover {
+    border-radius: 8px;
+}
